@@ -3,7 +3,7 @@ import 'package:massage_app/widgats/buttonMaterial.dart';
 
 class log_in_Screnn extends StatelessWidget {
   const log_in_Screnn({super.key});
-
+  static const String page_link = "log_in_Screnn";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +43,7 @@ class log_in_Screnn extends StatelessWidget {
             ),
           ),
           buttonMaterial(
-              ColorBtn: Colors.black87, name: "Log In", press: () {}),
+              ColorBtn: Colors.black87, name: "Log In", onPresse: () {}),
         ],
       ),
     );

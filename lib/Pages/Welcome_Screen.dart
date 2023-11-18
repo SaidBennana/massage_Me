@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:massage_app/Pages/logIn_Screen.dart';
+import 'package:massage_app/Pages/regastre_Page.dart';
 import 'package:massage_app/widgats/buttonMaterial.dart';
 
 class welcome_Screen extends StatelessWidget {
   const welcome_Screen({super.key});
+  static const String page_link = "welcome_Screen";
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class welcome_Screen extends StatelessWidget {
           ),
           Center(
             child: Text(
-              "Masssage GO",
+              "Massage GO",
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
           ),
@@ -28,7 +31,9 @@ class welcome_Screen extends StatelessWidget {
           buttonMaterial(
             ColorBtn: Colors.yellow[900]!,
             name: "Sign In",
-            press: () {},
+            onPresse: () {
+              Navigator.pushNamed(context, regaster_Screen.page_Link);
+            },
           ),
           SizedBox(
             height: 20,
@@ -36,7 +41,8 @@ class welcome_Screen extends StatelessWidget {
           buttonMaterial(
             ColorBtn: Colors.blue[900]!,
             name: "Log In",
-            press: () {},
+            onPresse: () =>
+                Navigator.pushNamed(context, log_in_Screnn.page_link),
           )
         ],
       ),

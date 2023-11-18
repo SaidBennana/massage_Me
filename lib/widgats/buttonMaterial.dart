@@ -5,11 +5,11 @@ class buttonMaterial extends StatelessWidget {
     super.key,
     required this.ColorBtn,
     required this.name,
-    required this.press,
+    required this.onPresse,
   });
   final Color ColorBtn;
   final String name;
-  final Function press;
+  final VoidCallback onPresse;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class buttonMaterial extends StatelessWidget {
       child: Material(
         borderRadius: BorderRadius.circular(60),
         child: MaterialButton(
-          onPressed: () => press,
+          onPressed: onPresse,
           minWidth: 200,
           height: 50,
           child: Text(

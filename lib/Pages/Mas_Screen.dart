@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Mas_Screen extends StatelessWidget {
   const Mas_Screen({super.key});
+  static const String page_link = "Mas_Screen";
 
   @override
   Widget build(BuildContext context) {

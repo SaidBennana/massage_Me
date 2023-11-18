@@ -3,6 +3,7 @@ import 'package:massage_app/widgats/buttonMaterial.dart';
 
 class regaster_Screen extends StatelessWidget {
   const regaster_Screen({super.key});
+  static const String page_Link = "regaster_Screen";
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +44,7 @@ class regaster_Screen extends StatelessWidget {
             ),
           ),
           buttonMaterial(
-              ColorBtn: Colors.black87, name: "Sign In", press: () {}),
+              ColorBtn: Colors.black87, name: "Sign In", onPresse: () {}),
         ],
       ),
     );
