@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:massage_app/widgats/buttonMaterial.dart';
 
 class welcome_Screen extends StatelessWidget {
   const welcome_Screen({super.key});
@@ -21,21 +22,21 @@ class welcome_Screen extends StatelessWidget {
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-            child: Material(
-              borderRadius: BorderRadius.circular(100),
-              child: MaterialButton(
-                onPressed: () {},
-                height: 45,
-                child: Text(
-                  "Sign in",
-                  style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.yellow[900],
-                hoverColor: Colors.white,
-              ),
-            ),
+          SizedBox(
+            height: 60,
+          ),
+          buttonMaterial(
+            ColorBtn: Colors.yellow[900]!,
+            name: "Sign In",
+            press: () {},
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          buttonMaterial(
+            ColorBtn: Colors.blue[900]!,
+            name: "Log In",
+            press: () {},
           )
         ],
       ),
