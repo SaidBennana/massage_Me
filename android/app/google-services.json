@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721100543094",
+    "project_id": "massagego-8d063",
+    "storage_bucket": "massagego-8d063.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721100543094:android:546bff74f71b1dd6517b57",
+        "android_client_info": {
+          "package_name": "sb.saidsb.massage_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARwao7Qx96Dc8OdDBQYJ8dgXJyaEdHMS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

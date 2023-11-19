@@ -29,21 +29,21 @@ class welcome_Screen extends StatelessWidget {
             height: 60,
           ),
           buttonMaterial(
+            ColorBtn: Colors.blue[900]!,
+            name: "Log In",
+            onPresse: () =>
+                Navigator.pushNamed(context, log_in_Screnn.page_link),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          buttonMaterial(
             ColorBtn: Colors.yellow[900]!,
             name: "Sign In",
             onPresse: () {
               Navigator.pushNamed(context, regaster_Screen.page_Link);
             },
           ),
-          SizedBox(
-            height: 20,
-          ),
-          buttonMaterial(
-            ColorBtn: Colors.blue[900]!,
-            name: "Log In",
-            onPresse: () =>
-                Navigator.pushNamed(context, log_in_Screnn.page_link),
-          )
         ],
       ),
     );
